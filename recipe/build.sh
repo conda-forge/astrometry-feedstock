@@ -30,6 +30,5 @@ mv "$PREFIX/etc/astrometry.cfg" "$PREFIX/share/astrometry/astrometry.cfg"
 
 # Remove useless example files
 rm -Rf "$PREFIX/examples"
-
 # Remove useless doc folder
 rm -Rf "$PREFIX/doc"
