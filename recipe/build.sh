@@ -17,6 +17,9 @@ export JPEG_INC="-I$PREFIX/include"
 export JPEG_LIB="-L$PREFIX/lib -ljpeg"
 export ZLIB_INC="-I$PREFIX/include"
 export ZLIB_LIB="-L$PREFIX/lib -lz"
+export SYSTEM_GSL=yes
+export GSL_INC="-I$PREFIX/include"
+export GSL_LIB="-L$PREFIX/lib -lgsl"
 
 # Making process
 make -j${CPU_COUNT}
