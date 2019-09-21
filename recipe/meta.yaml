@@ -10,20 +10,21 @@ source:
   sha256: 85480b9636757c89ef5ccc7aac557409ac2ab377eb6c6eca862b16cdd4faefd9
 
 build:
-  number: 0
-  skip: True  # [osx or win]
+  number: 1
+  skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - swig
     - make
+    - pkg-config
   host:
-    - xorg-libx11  # [linux]
-    - xorg-libxau  # [linux]
-    - xorg-libxext  # [linux]
-    - xorg-libxrender  # [linux]
-    - xorg-xproto  # [linux]
+    - xorg-libx11
+    - xorg-libxau
+    - xorg-libxext
+    - xorg-libxrender
+    - xorg-xproto
     - numpy
     - zlib
     - jpeg
@@ -34,6 +35,7 @@ requirements:
     - bzip2
     - cairo
     - gsl
+    - wcslib
   run:
     - zlib
     - jpeg
@@ -45,6 +47,7 @@ requirements:
     - bzip2
     - cairo
     - gsl
+    - wcslib
 
 test:
   commands:

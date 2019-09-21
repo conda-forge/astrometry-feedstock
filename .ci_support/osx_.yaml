@@ -1,0 +1,41 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '10.9'
+bzip2:
+- '1'
+c_compiler:
+- clang
+c_compiler_version:
+- '4'
+cairo:
+- '1.16'
+cfitsio:
+- '3.470'
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+gsl:
+- '2.5'
+jpeg:
+- '9'
+libpng:
+- '1.6'
+macos_machine:
+- x86_64-apple-darwin13.4.0
+macos_min_version:
+- '10.9'
+numpy:
+- '1.14'
+pin_run_as_build:
+  bzip2:
+    max_pin: x
+  cairo:
+    max_pin: x.x
+  jpeg:
+    max_pin: x
+  libpng:
+    max_pin: x.x
+  zlib:
+    max_pin: x.x
+zlib:
+- '1.2'
