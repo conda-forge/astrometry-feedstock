@@ -20,6 +20,8 @@ export ZLIB_LIB="-L$PREFIX/lib -lz"
 export SYSTEM_GSL=yes
 export GSL_INC="-I$PREFIX/include"
 export GSL_LIB="-L$PREFIX/lib -lgsl"
+export WCSLIB_INC="-I$PREFIX/include"
+export WCSLIB_LIB="-L$PREFIX/lib -lwcs"
 
 # Making process
 make -j${CPU_COUNT}
@@ -33,5 +35,6 @@ mv "$PREFIX/etc/astrometry.cfg" "$PREFIX/share/astrometry/astrometry.cfg"
 
 # Remove useless example files
 rm -Rf "$PREFIX/examples"
+
 # Remove useless doc folder
 rm -Rf "$PREFIX/doc"
