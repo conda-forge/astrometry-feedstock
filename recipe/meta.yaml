@@ -18,6 +18,7 @@ requirements:
     - {{ compiler('c') }}
     - swig
     - make
+    - pkg-config
   host:
     - xorg-libx11
     - xorg-libxau
