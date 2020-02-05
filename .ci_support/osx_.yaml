@@ -15,7 +15,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 gsl:
-- '2.5'
+- '2.6'
 jpeg:
 - '9'
 libpng:
