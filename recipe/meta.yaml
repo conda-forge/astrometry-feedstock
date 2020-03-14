@@ -10,7 +10,7 @@ source:
   sha256: d85673f4ac8a51740aa8d79d65b29b6db725a14995f8f59a912f1288e90198bb
 
 build:
-  number: 1
+  number: 2
   skip: True  # [win]
 
 requirements:
@@ -19,6 +19,7 @@ requirements:
     - swig
     - make
     - pkg-config
+    - python
   host:
     - xorg-libx11
     - xorg-libxau
@@ -36,6 +37,11 @@ requirements:
     - cairo
     - gsl
     - wcslib
+    - python
+    - libblas
+    - libcblas
+    - liblapack
+    - liblapacke
   run:
     - zlib
     - jpeg
@@ -48,6 +54,7 @@ requirements:
     - cairo
     - gsl
     - wcslib
+    - python
 
 test:
   commands:

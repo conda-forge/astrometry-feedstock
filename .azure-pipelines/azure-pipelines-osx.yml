@@ -5,13 +5,19 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-10.13
+    vmImage: macOS-10.14
   timeoutInMinutes: 360
   strategy:
     maxParallel: 8
     matrix:
-      osx_:
-        CONFIG: osx_
+      osx_python2.7.____cpython:
+        CONFIG: osx_python2.7.____cpython
+        UPLOAD_PACKAGES: True
+      osx_python3.6.____cpython:
+        CONFIG: osx_python3.6.____cpython
+        UPLOAD_PACKAGES: True
+      osx_python3.7.____cpython:
+        CONFIG: osx_python3.7.____cpython
         UPLOAD_PACKAGES: True
 
   steps:

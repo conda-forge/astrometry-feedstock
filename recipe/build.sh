@@ -7,7 +7,7 @@ rm -f $PREFIX/include/tic.h
 # System packages config
 export CFITS_INC="-I$PREFIX/include"
 export CFITS_LIB="-L$PREFIX/lib -lcfitsio -lm"
-export NETPBM_INC="-I$PREFIX/include"
+export NETPBM_INC="-I$PREFIX/include -I$PREFIX/include/netpbm"
 export NETPBM_LIB="-L$PREFIX/lib -lnetpbm"
 export CAIRO_INC="-I$PREFIX/include -I$PREFIX/include/cairo"
 export CAIRO_LIB="-L$PREFIX/lib -lcairo"
