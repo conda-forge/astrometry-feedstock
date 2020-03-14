@@ -19,6 +19,7 @@ requirements:
     - swig
     - make
     - pkg-config
+    - python
   host:
     - xorg-libx11
     - xorg-libxau
@@ -36,6 +37,7 @@ requirements:
     - cairo
     - gsl
     - wcslib
+    - python
   run:
     - zlib
     - jpeg
