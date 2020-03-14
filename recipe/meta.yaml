@@ -38,6 +38,10 @@ requirements:
     - gsl
     - wcslib
     - python
+    - libblas
+    - libcblas
+    - liblapack
+    - liblapacke
   run:
     - zlib
     - jpeg
@@ -50,6 +54,7 @@ requirements:
     - cairo
     - gsl
     - wcslib
+    - python
 
 test:
   commands:
