@@ -47,8 +47,3 @@ rm -Rf "$PREFIX/examples"
 # Remove useless doc folder
 rm -Rf "$PREFIX/doc"
 
-curl https://gist.githubusercontent.com/SleepProgger/d4f5e0a0ea2b9456e6c7ecf256629396/raw/f5425f18f0d14e2e128c8184ccc009294120913d/cpu_features.py --output cpu_features.py
-
-python cpu_features.py "$PREFIX/bin/solve-field"
-
-exit 255
