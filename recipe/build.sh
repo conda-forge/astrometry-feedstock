@@ -5,7 +5,7 @@ rm -f $CONDA_PREFIX/include/tic.h
 rm -f $PREFIX/include/tic.h
 
 # Try to do it portable
-$ ARCH_FLAGS="-mtune=generic"
+export ARCH_FLAGS="-mtune=generic"
 
 # System packages config
 export CFITS_INC="-I$PREFIX/include"
