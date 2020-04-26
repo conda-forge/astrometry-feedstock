@@ -1,17 +1,17 @@
 {% set name = "astrometry" %}
-{% set version = "0.79" %}
+{% set version = "0.80" %}
 
 package:
-  name: {{ name|lower}}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://github.com/dstndstn/astrometry.net/archive/{{ version }}.zip
-  sha256: d85673f4ac8a51740aa8d79d65b29b6db725a14995f8f59a912f1288e90198bb
+  sha256: f81b3af83ac25299f3cd4d1b66c97bd87bf18090681ec7c9b025051fdad1c7cc
 
 build:
-  number: 4
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -62,9 +62,9 @@ about:
   license_file: LICENSE
   summary: Automatic recognition of astronomical images; or standards-compliant astrometric metadata from data.
   description: |
-     If you have astronomical imaging of the sky with celestial coordinates you do not know—or do not
-     trust—then Astrometry.net is for you. Input an image and we'll give you back astrometric
-     calibration meta-data, plus lists of known objects falling inside the field of view
+    If you have astronomical imaging of the sky with celestial coordinates you do not know—or do not
+    trust—then Astrometry.net is for you. Input an image and we'll give you back astrometric
+    calibration meta-data, plus lists of known objects falling inside the field of view
   doc_url: http://astrometry.net/doc/readme.html
   dev_url: https://github.com/dstndstn/astrometry.net/
 
