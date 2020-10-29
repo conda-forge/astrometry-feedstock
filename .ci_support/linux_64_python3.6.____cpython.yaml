@@ -6,6 +6,8 @@ c_compiler_version:
 - '7'
 cairo:
 - '1.16'
+cdt_name:
+- cos6
 cfitsio:
 - '3.470'
 channel_sources:
@@ -40,5 +42,8 @@ python:
 - 3.6.* *_cpython
 target_platform:
 - linux-64
+zip_keys:
+- - python
+  - numpy
 zlib:
 - '1.2'

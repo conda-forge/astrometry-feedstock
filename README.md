@@ -5,9 +5,13 @@ Home: http://astrometry.net/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/astrometry-feedstock/blob/master/LICENSE.txt)
 
 Summary: Automatic recognition of astronomical images; or standards-compliant astrometric metadata from data.
+
+Development: https://github.com/dstndstn/astrometry.net/
+
+Documentation: http://astrometry.net/doc/readme.html
 
 If you have astronomical imaging of the sky with celestial coordinates you do not know—or do not
 trust—then Astrometry.net is for you. Input an image and we'll give you back astrometric
