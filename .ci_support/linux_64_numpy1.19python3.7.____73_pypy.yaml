@@ -17,7 +17,7 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-comp7
 gsl:
-- '2.6'
+- '2.7'
 jpeg:
 - '9'
 libpng:
