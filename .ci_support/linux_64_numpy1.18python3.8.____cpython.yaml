@@ -9,9 +9,9 @@ cairo:
 cdt_name:
 - cos6
 cfitsio:
-- '3.470'
+- 4.0.0
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 docker_image:
