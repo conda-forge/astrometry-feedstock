@@ -3,13 +3,13 @@ bzip2:
 c_compiler:
 - gcc
 c_compiler_version:
-- '9'
+- '10'
 cairo:
 - '1.16'
 cdt_name:
 - cos6
 cfitsio:
-- 4.0.0
+- 4.1.0
 channel_sources:
 - conda-forge
 channel_targets:
