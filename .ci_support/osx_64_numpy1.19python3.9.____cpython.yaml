@@ -5,7 +5,7 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '12'
+- '13'
 cairo:
 - '1.16'
 cfitsio:
