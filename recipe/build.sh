@@ -31,6 +31,9 @@ export GSL_LIB="-L$PREFIX/lib -lgsl"
 export WCSLIB_INC="-I$PREFIX/include -I$PREFIX/include/wcslib"
 export WCSLIB_LIB="-L$PREFIX/lib -lwcs"
 
+PY_VER ?= $(shell $(PYTHON) -c "from sys import version_info as v; print('python%i.%i' % (v.major,v.minor))")
+export PY_BASE_INSTALL_DIR ?= $(INSTALL_DIR)/lib/$(PY_VER)/astrometry
+
 # Making process
 make -j${CPU_COUNT}
 make extra
