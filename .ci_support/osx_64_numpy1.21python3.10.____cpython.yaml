@@ -42,6 +42,8 @@ python:
 - 3.10.* *_cpython
 target_platform:
 - osx-64
+wcslib:
+- '7.7'
 zip_keys:
 - - python
   - numpy
