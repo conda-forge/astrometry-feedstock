@@ -32,7 +32,7 @@ export WCSLIB_INC="-I$PREFIX/include -I$PREFIX/include/wcslib"
 export WCSLIB_LIB="-L$PREFIX/lib -lwcs"
 
 export INSTALL_DIR="$PREFIX"
-export PY_BASE_INSTALL_DIR=$SP_DIR/astrometry
+export PY_BASE_INSTALL_DIR="$SP_DIR/astrometry"
 
 # Making process
 make -j${CPU_COUNT}
