@@ -31,6 +31,7 @@ export GSL_LIB="-L$PREFIX/lib -lgsl"
 export WCSLIB_INC="-I$PREFIX/include -I$PREFIX/include/wcslib"
 export WCSLIB_LIB="-L$PREFIX/lib -lwcs"
 
+export INSTALL_DIR="$PREFIX"
 export PY_VER=$(python -c "from sys import version_info as v; print('python%i.%i' % (v.major,v.minor))")
 export PY_BASE_INSTALL_DIR=$INSTALL_DIR/lib/$PY_VER/astrometry
 
@@ -38,7 +39,7 @@ export PY_BASE_INSTALL_DIR=$INSTALL_DIR/lib/$PY_VER/astrometry
 make -j${CPU_COUNT}
 make extra
 make py
-make install INSTALL_DIR="$PREFIX"
+make install
 
 # Move the default configuration file to avoid user config overwritten
 mkdir -p "$PREFIX/share/astrometry"
