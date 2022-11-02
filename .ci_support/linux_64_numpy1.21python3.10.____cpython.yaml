@@ -5,7 +5,7 @@ c_compiler:
 c_compiler_version:
 - '10'
 cairo:
-- '1.16'
+- '1'
 cdt_name:
 - cos6
 cfitsio:
@@ -25,18 +25,8 @@ libpng:
 numpy:
 - '1.21'
 pin_run_as_build:
-  bzip2:
-    max_pin: x
-  cairo:
-    max_pin: x.x
-  jpeg:
-    max_pin: x
-  libpng:
-    max_pin: x.x
   python:
     min_pin: x.x
-    max_pin: x.x
-  zlib:
     max_pin: x.x
 python:
 - 3.10.* *_cpython
