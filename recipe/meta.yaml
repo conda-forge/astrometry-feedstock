@@ -1,5 +1,5 @@
 {% set name = "astrometry" %}
-{% set version = "0.92" %}
+{% set version = "0.93" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dstndstn/astrometry.net/archive/{{ version }}.zip
-  sha256: 85f12bcb2ff95d24aa324f2478d261b976859a8358e1f396cc468bb5ca4f2ae4
+  sha256: cfe7cdd59886b3f09bb7a93b6094669e1785761ea11df02bbc03810c2e10242c
 
 build:
   number: 0
