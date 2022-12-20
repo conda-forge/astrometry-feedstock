@@ -3,7 +3,7 @@ bzip2:
 c_compiler:
 - gcc
 c_compiler_version:
-- '10'
+- '11'
 cairo:
 - '1'
 cdt_name:
