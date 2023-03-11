@@ -1,11 +1,11 @@
-About astrometry
-================
+About astrometry-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/astrometry-feedstock/blob/main/LICENSE.txt)
 
 Home: http://astrometry.net/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/astrometry-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatic recognition of astronomical images; or standards-compliant astrometric metadata from data.
 
