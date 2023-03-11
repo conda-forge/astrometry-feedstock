@@ -16,8 +16,8 @@ channel_targets:
 - conda-forge main
 gsl:
 - '2.7'
-jpeg:
-- '9'
+libjpeg_turbo:
+- 2.1.5
 libpng:
 - '1.6'
 macos_machine:

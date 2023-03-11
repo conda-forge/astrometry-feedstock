@@ -10,7 +10,7 @@ source:
   sha256: cfe7cdd59886b3f09bb7a93b6094669e1785761ea11df02bbc03810c2e10242c
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -28,7 +28,7 @@ requirements:
     - xorg-xproto
     - numpy
     - zlib
-    - jpeg
+    - libjpeg-turbo
     - netpbm
     - libpng
     - cfitsio
@@ -40,7 +40,7 @@ requirements:
     - python
   run:
     - zlib
-    - jpeg
+    - libjpeg-turbo
     - netpbm
     - libpng
     - cfitsio
