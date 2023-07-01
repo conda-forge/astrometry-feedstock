@@ -9,7 +9,7 @@ cairo:
 cdt_name:
 - cos6
 cfitsio:
-- 4.1.0
+- 4.2.0
 channel_sources:
 - conda-forge
 channel_targets:
@@ -33,7 +33,7 @@ python:
 target_platform:
 - linux-64
 wcslib:
-- '7.7'
+- '7'
 zip_keys:
 - - python
   - numpy
