@@ -33,7 +33,7 @@ python:
 target_platform:
 - linux-64
 wcslib:
-- '7.7'
+- '7'
 zip_keys:
 - - python
   - numpy
