@@ -9,7 +9,7 @@ cairo:
 cdt_name:
 - cos6
 cfitsio:
-- 4.2.0
+- 4.3.0
 channel_sources:
 - conda-forge
 channel_targets:
