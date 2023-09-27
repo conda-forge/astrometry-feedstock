@@ -19,17 +19,17 @@ docker_image:
 gsl:
 - '2.7'
 libjpeg_turbo:
-- 2.1.5
+- '3'
 libpng:
 - '1.6'
 numpy:
-- '1.21'
+- '1.22'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.9.* *_73_pypy
 target_platform:
 - linux-64
 wcslib:
