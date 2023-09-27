@@ -17,19 +17,19 @@ channel_targets:
 gsl:
 - '2.7'
 libjpeg_turbo:
-- 2.1.5
+- '3'
 libpng:
 - '1.6'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
-- '1.21'
+- '1.22'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_73_pypy
+- 3.9.* *_cpython
 target_platform:
 - osx-64
 wcslib:
