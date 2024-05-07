@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
     - swig
     - make
     - pkg-config
@@ -51,6 +52,7 @@ requirements:
     - gsl
     - wcslib
     - python
+    - setuptools
 
 test:
   commands:
