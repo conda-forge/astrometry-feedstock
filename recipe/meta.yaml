@@ -58,7 +58,7 @@ requirements:
 
 test:
   commands:
-    - solve-field -h
+    - solve-field --version
 
 about:
   home: http://astrometry.net/

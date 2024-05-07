@@ -7,10 +7,9 @@ rm -f $PREFIX/include/tic.h
 # Fix of Illegal Instructions
 export ARCH_FLAGS=""
 if [[ "$target_platform" == linux* ]]; then
-    export CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/astrometry-0.79 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix"
-    export DEBUG_CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/astrometry-0.79 -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix"
+    export CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR -fdebug-prefix-map=$PREFIX"
+    export DEBUG_CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR -fdebug-prefix-map=$PREFIX"
 fi
-
 
 # System packages config
 export CFITS_INC="-I$PREFIX/include"
@@ -33,6 +32,8 @@ export WCSLIB_LIB="-L$PREFIX/lib -lwcs"
 
 export INSTALL_DIR="$PREFIX"
 export PY_BASE_INSTALL_DIR="$SP_DIR/astrometry"
+
+export AN_GIT_REVISION="$PKG_VERSION"
 
 # Making process
 make -j${CPU_COUNT}
