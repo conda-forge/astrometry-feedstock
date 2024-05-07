@@ -21,6 +21,7 @@ requirements:
     - make
     - pkg-config
     - python
+    - setuptools
   host:
     - xorg-libx11
     - xorg-libxau
@@ -39,6 +40,7 @@ requirements:
     - gsl
     - wcslib
     - python
+    - setuptools
   run:
     - zlib
     - libjpeg-turbo
