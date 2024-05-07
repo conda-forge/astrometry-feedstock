@@ -4,12 +4,16 @@ c_compiler:
 - gcc
 c_compiler_version:
 - '12'
+c_stdlib:
+- sysroot
+c_stdlib_version:
+- '2.12'
 cairo:
 - '1'
 cdt_name:
 - cos6
 cfitsio:
-- 4.3.1
+- 4.4.0
 channel_sources:
 - conda-forge
 channel_targets:
@@ -35,6 +39,8 @@ target_platform:
 wcslib:
 - '8'
 zip_keys:
+- - c_stdlib_version
+  - cdt_name
 - - python
   - numpy
 zlib:
