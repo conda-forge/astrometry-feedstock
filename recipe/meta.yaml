@@ -1,5 +1,5 @@
 {% set name = "astrometry" %}
-{% set version = "0.94" %}
+{% set version = "0.95" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,21 @@ package:
 
 source:
   url: https://github.com/dstndstn/astrometry.net/archive/{{ version }}.zip
-  sha256: 405348a4714f1413dde14bec22e08cc2cfbbfeb653858e55dff81d15ee5d13ea
+  sha256: 4242eb1207f3a44b68d76d130a5e805fe65fc58db0852529d2187212ea0015ea
 
 build:
-  number: 6
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
-    - {{ compiler('c') }}
+    - {{ compiler("c") }}
+    - {{ stdlib("c") }}
     - swig
     - make
     - pkg-config
     - python
+    - setuptools
   host:
     - xorg-libx11
     - xorg-libxau
@@ -38,6 +40,7 @@ requirements:
     - gsl
     - wcslib
     - python
+    - setuptools
   run:
     - zlib
     - libjpeg-turbo
@@ -51,6 +54,7 @@ requirements:
     - gsl
     - wcslib
     - python
+    - setuptools
 
 test:
   commands:
