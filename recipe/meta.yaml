@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/dstndstn/astrometry.net/archive/{{ version }}.zip
-  sha256: 4242eb1207f3a44b68d76d130a5e805fe65fc58db0852529d2187212ea0015ea
+  url: https://github.com/dstndstn/astrometry.net/releases/download/{{ version }}/astrometry.net-{{ version }}.tar.gz
+  sha256: b8239e39b44d6877b0427edeffd95efc258520044ff5afdd0fb1a89ff8f1afc0
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -58,7 +58,7 @@ requirements:
 
 test:
   commands:
-    - solve-field -h
+    - solve-field --version
 
 about:
   home: http://astrometry.net/
