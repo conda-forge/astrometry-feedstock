@@ -7,8 +7,8 @@ rm -f $PREFIX/include/tic.h
 # Fix of Illegal Instructions
 export ARCH_FLAGS=""
 if [[ "$target_platform" == linux* ]]; then
-    export CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR -fdebug-prefix-map=$PREFIX"
-    export DEBUG_CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR -fdebug-prefix-map=$PREFIX"
+    export CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/astrometry-$PKG_VERSION -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix"
+    export DEBUG_CFLAGS="-march=x86-64 -mtune=generic -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem $PREFIX/include -fdebug-prefix-map=$SRC_DIR=/usr/local/src/conda/astrometry-$PKG_VERSION -fdebug-prefix-map=$PREFIX=/usr/local/src/conda-prefix"
 fi
 
 # System packages config
