@@ -33,8 +33,6 @@ export WCSLIB_LIB="-L$PREFIX/lib -lwcs"
 export INSTALL_DIR="$PREFIX"
 export PY_BASE_INSTALL_DIR="$SP_DIR/astrometry"
 
-export AN_GIT_REVISION="$PKG_VERSION"
-
 # Making process
 make -j${CPU_COUNT}
 make extra
