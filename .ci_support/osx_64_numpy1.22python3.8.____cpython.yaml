@@ -2,10 +2,6 @@ MACOSX_DEPLOYMENT_TARGET:
 - '10.13'
 bzip2:
 - '1'
-c_compiler:
-- clang
-c_compiler_version:
-- '16'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
