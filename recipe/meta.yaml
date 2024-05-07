@@ -15,8 +15,8 @@ build:
 
 requirements:
   build:
-    - {{ compiler('gcc') }}
-    - {{ stdlib('c') }}
+    - {{ compiler("c") }}
+    - {{ stdlib("c") }}
     - swig
     - make
     - pkg-config
