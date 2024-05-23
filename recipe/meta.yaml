@@ -38,6 +38,7 @@ requirements:
     - cairo
     - gsl
     - wcslib
+    - numpy
     - python
     - setuptools
   run:
