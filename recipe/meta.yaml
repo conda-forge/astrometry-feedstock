@@ -48,7 +48,6 @@ requirements:
     - libpng
     - cfitsio
     - astropy
-    - {{ pin_compatible('numpy') }}
     - bzip2
     - cairo
     - gsl
