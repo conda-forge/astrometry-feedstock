@@ -26,14 +26,12 @@ libjpeg_turbo:
 - '3'
 libpng:
 - '1.6'
-numpy:
-- '2.0'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.12.* *_cpython
+- 3.9.* *_73_pypy
 target_platform:
 - linux-64
 wcslib:
@@ -41,7 +39,5 @@ wcslib:
 zip_keys:
 - - c_stdlib_version
   - cdt_name
-- - python
-  - numpy
 zlib:
 - '1'
