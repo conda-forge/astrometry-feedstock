@@ -1,5 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.13'
+MACOSX_SDK_VERSION:
+- '10.13'
 bzip2:
 - '1'
 c_compiler:
@@ -15,7 +17,7 @@ cairo:
 cfitsio:
 - 4.4.0
 channel_sources:
-- conda-forge
+- conda-forge/label/numpy_rc,conda-forge
 channel_targets:
 - conda-forge main
 gsl:
@@ -27,13 +29,13 @@ libpng:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
-- '1.22'
+- '2.0'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.12.* *_cpython
 target_platform:
 - osx-64
 wcslib:

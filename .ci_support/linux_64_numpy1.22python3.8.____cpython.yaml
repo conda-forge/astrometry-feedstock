@@ -15,7 +15,7 @@ cdt_name:
 cfitsio:
 - 4.4.0
 channel_sources:
-- conda-forge
+- conda-forge/label/numpy_rc,conda-forge
 channel_targets:
 - conda-forge main
 docker_image:
