@@ -10,7 +10,7 @@ source:
   sha256: b8239e39b44d6877b0427edeffd95efc258520044ff5afdd0fb1a89ff8f1afc0
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 requirements:
@@ -28,7 +28,6 @@ requirements:
     - xorg-libxext
     - xorg-libxrender
     - xorg-xproto
-    - numpy
     - zlib
     - libjpeg-turbo
     - netpbm
@@ -39,6 +38,7 @@ requirements:
     - cairo
     - gsl
     - wcslib
+    - numpy
     - python
     - setuptools
   run:
@@ -48,13 +48,13 @@ requirements:
     - libpng
     - cfitsio
     - astropy
-    - {{ pin_compatible('numpy') }}
     - bzip2
     - cairo
     - gsl
     - wcslib
     - python
     - setuptools
+    - numpy <2
 
 test:
   commands:
