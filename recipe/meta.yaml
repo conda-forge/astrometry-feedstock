@@ -28,7 +28,6 @@ requirements:
     - xorg-libxext
     - xorg-libxrender
     - xorg-xproto
-    - numpy
     - zlib
     - libjpeg-turbo
     - netpbm
@@ -54,6 +53,7 @@ requirements:
     - wcslib
     - python
     - setuptools
+    - numpy <2
 
 test:
   commands:
