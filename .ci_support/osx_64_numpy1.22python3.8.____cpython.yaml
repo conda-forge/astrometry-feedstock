@@ -17,7 +17,7 @@ cairo:
 cfitsio:
 - 4.4.1
 channel_sources:
-- conda-forge
+- conda-forge/label/numpy_rc,conda-forge
 channel_targets:
 - conda-forge main
 gsl:

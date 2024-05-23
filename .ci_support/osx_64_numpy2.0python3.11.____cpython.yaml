@@ -17,7 +17,7 @@ cairo:
 cfitsio:
 - 4.4.1
 channel_sources:
-- conda-forge
+- conda-forge/label/numpy_rc,conda-forge
 channel_targets:
 - conda-forge main
 gsl:
@@ -29,13 +29,13 @@ libpng:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
-- '1.26'
+- '2.0'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.12.* *_cpython
+- 3.11.* *_cpython
 target_platform:
 - osx-64
 wcslib:
