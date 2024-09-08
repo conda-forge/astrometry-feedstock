@@ -7,7 +7,7 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '16'
+- '17'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -43,5 +43,6 @@ wcslib:
 zip_keys:
 - - python
   - numpy
+  - channel_sources
 zlib:
 - '1'
