@@ -1,5 +1,5 @@
 {% set name = "astrometry" %}
-{% set version = "0.95" %}
+{% set version = "0.96" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/dstndstn/astrometry.net/releases/download/{{ version }}/astrometry.net-{{ version }}.tar.gz
-  sha256: b8239e39b44d6877b0427edeffd95efc258520044ff5afdd0fb1a89ff8f1afc0
+  sha256: fb3f2ec09cbe155d9ff461b9a60336f8493f5cb7804199e1782664e9034c9aac
 
 build:
-  number: 3
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -28,7 +28,6 @@ requirements:
     - xorg-libxext
     - xorg-libxrender
     - xorg-xproto
-    - numpy
     - zlib
     - libjpeg-turbo
     - netpbm
@@ -39,6 +38,7 @@ requirements:
     - cairo
     - gsl
     - wcslib
+    - numpy
     - python
     - setuptools
   run:
@@ -48,13 +48,13 @@ requirements:
     - libpng
     - cfitsio
     - astropy
-    - {{ pin_compatible('numpy') }}
     - bzip2
     - cairo
     - gsl
     - wcslib
     - python
     - setuptools
+    - numpy
 
 test:
   commands:
