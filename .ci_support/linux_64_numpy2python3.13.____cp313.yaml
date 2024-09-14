@@ -15,7 +15,7 @@ cdt_name:
 cfitsio:
 - 4.4.1
 channel_sources:
-- conda-forge
+- conda-forge/label/python_rc,conda-forge
 channel_targets:
 - conda-forge main
 docker_image:
@@ -27,13 +27,13 @@ libjpeg_turbo:
 libpng:
 - '1.6'
 numpy:
-- '2.0'
+- '2'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.13.* *_cp313
 target_platform:
 - linux-64
 wcslib:
@@ -43,5 +43,6 @@ zip_keys:
   - cdt_name
 - - python
   - numpy
+  - channel_sources
 zlib:
 - '1'
