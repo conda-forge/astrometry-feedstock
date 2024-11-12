@@ -11,11 +11,11 @@ c_stdlib_version:
 cairo:
 - '1'
 cdt_name:
-- cos7
+- conda
 cfitsio:
 - 4.4.1
 channel_sources:
-- conda-forge/label/python_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge main
 docker_image:
@@ -39,10 +39,7 @@ target_platform:
 wcslib:
 - '8'
 zip_keys:
-- - c_stdlib_version
-  - cdt_name
 - - python
   - numpy
-  - channel_sources
 zlib:
 - '1'
