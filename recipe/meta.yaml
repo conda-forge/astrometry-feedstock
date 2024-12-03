@@ -47,7 +47,7 @@ requirements:
     - netpbm
     - libpng
     - cfitsio
-    - astropy
+    - astropy-base
     - bzip2
     - cairo
     - gsl
