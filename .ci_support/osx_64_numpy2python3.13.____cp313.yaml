@@ -7,7 +7,7 @@ bzip2:
 c_compiler:
 - clang
 c_compiler_version:
-- '17'
+- '18'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
@@ -17,7 +17,7 @@ cairo:
 cfitsio:
 - 4.4.1
 channel_sources:
-- conda-forge/label/python_rc,conda-forge
+- conda-forge
 channel_targets:
 - conda-forge main
 gsl:
@@ -43,6 +43,5 @@ wcslib:
 zip_keys:
 - - python
   - numpy
-  - channel_sources
 zlib:
 - '1'
