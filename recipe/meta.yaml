@@ -10,7 +10,7 @@ source:
   sha256: e4eef1b658ba5ad462282b661c0ca3a5c538ba1716e853f7970b7b9fa4a33459
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -33,7 +33,7 @@ requirements:
     - netpbm
     - libpng
     - cfitsio
-    - astropy
+    - astropy-base
     - bzip2
     - cairo
     - gsl
