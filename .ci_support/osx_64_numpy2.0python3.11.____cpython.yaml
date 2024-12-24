@@ -15,7 +15,7 @@ c_stdlib_version:
 cairo:
 - '1'
 cfitsio:
-- 4.4.1
+- 4.5.0
 channel_sources:
 - conda-forge
 channel_targets:
