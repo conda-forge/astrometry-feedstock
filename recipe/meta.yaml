@@ -27,7 +27,7 @@ requirements:
     - xorg-libxau
     - xorg-libxext
     - xorg-libxrender
-    - xorg-xproto
+    - xorg-xorgproto
     - zlib
     - libjpeg-turbo
     - netpbm
