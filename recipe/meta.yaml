@@ -10,8 +10,8 @@ source:
   sha256: e4eef1b658ba5ad462282b661c0ca3a5c538ba1716e853f7970b7b9fa4a33459
 
 build:
-  number: 3
-  skip: true  # [win]
+  number: 4
+  skip: true  # [win or py < 310]
 
 requirements:
   build:
@@ -27,7 +27,7 @@ requirements:
     - xorg-libxau
     - xorg-libxext
     - xorg-libxrender
-    - xorg-xproto
+    - xorg-xorgproto
     - zlib
     - libjpeg-turbo
     - netpbm
