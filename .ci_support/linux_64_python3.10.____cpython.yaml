@@ -11,7 +11,7 @@ c_stdlib_version:
 cairo:
 - '1'
 cfitsio:
-- 4.6.3
+- 4.6.4
 channel_sources:
 - conda-forge
 channel_targets:
@@ -36,8 +36,5 @@ target_platform:
 - linux-64
 wcslib:
 - '8'
-zip_keys:
-- - python
-  - channel_sources
 zlib:
 - '1'
