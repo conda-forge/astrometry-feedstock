@@ -3,14 +3,14 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/dstndstn/astrometry.net/releases/download/{{ version }}/astrometry.net-{{ version }}.tar.gz
   sha256: e4eef1b658ba5ad462282b661c0ca3a5c538ba1716e853f7970b7b9fa4a33459
 
 build:
-  number: 6
+  number: 7
   skip: true  # [win or py < 310]
 
 requirements:
