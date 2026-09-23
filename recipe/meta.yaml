@@ -3,7 +3,7 @@
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://github.com/dstndstn/astrometry.net/releases/download/{{ version }}/astrometry.net-{{ version }}.tar.gz
